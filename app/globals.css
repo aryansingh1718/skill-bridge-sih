@@ -1,26 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap");
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Backgrounds */
+  --color-bg: #0B1020;
+  --color-surface: #11182B;
+  --color-card: #17213A;
+  --color-border: #263451;
+
+  /* Role accents */
+  --color-violet: #8B5CF6;
+  --color-indigo: #6366F1;
+  --color-cyan: #22D3EE;
+  --color-mint: #34D399;
+  --color-amber: #FBBF24;
+  --color-red: #F87171;
+
+  /* Text */
+  --color-text: #F8FAFC;
+  --color-muted: #94A3B8;
+
+  /* Fonts */
+  --font-display: "Space Grotesk", sans-serif;
+  --font-sans: "Inter", sans-serif;
+
+  /* Radius */
+  --radius-card: 12px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: var(--font-display);
+}
+
+* {
+  box-sizing: border-box;
 }
