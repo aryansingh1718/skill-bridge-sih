@@ -94,9 +94,9 @@ export default function LoginPage() {
 }
 
   return (
-    <main className="relative min-h-screen overflow-hidden bg-bg flex flex-col items-center justify-center px-6 py-16">
-      {/* Ambient background glows */}
-      <div className="pointer-events-none absolute inset-0 overflow-hidden">
+    <main className="relative min-h-screen bg-bg flex flex-col items-center px-6 py-12 sm:py-16 overflow-y-auto">
+        {/* Ambient background glows */}
+        <div className="pointer-events-none absolute inset-0 overflow-hidden -z-10">
         <div className="absolute -top-40 -left-32 w-[480px] h-[480px] rounded-full bg-indigo/25 blur-[120px]" />
         <div className="absolute top-1/3 -right-32 w-[420px] h-[420px] rounded-full bg-cyan/15 blur-[120px]" />
         <div className="absolute -bottom-40 left-1/3 w-[440px] h-[440px] rounded-full bg-violet/20 blur-[120px]" />
